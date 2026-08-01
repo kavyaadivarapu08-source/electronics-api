@@ -4,10 +4,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 DATABASE_URL = os.getenv("DATABASE_URL1")
 
-engine = create_engine(
-    DATABASE_URL,
-    connect_args={"ssl": {}}
-)
+engine = create_engine(DATABASE_URL)
 
 SessionLocal = sessionmaker(
     autocommit=False,
