@@ -1,11 +1,8 @@
+import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-<<<<<<< HEAD
 DATABASE_URL = os.getenv("DATABASE_URL1")
-=======
-DATABASE_URL = "mysql://avnadmin:AVNS_sQndrfyDQ7y4GeN93ff@mysql-59bb94d-kavyaadivarapu08-4186.e.aivencloud.com:19919/defaultdb"
->>>>>>> 0cf6d5866e60cacc2dfaa97fb651bd813cc07597
 
 engine = create_engine(DATABASE_URL)
 
