@@ -48,5 +48,4 @@ def login(
             status_code=401,
             detail="Invalid username or password"
         )
-        @router.post("/login")
     return token
