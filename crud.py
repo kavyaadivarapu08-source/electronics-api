@@ -1,4 +1,7 @@
 from sqlalchemy.orm import Session
+from security import hash_password, verify_password, create_access_token
+import models
+import schemas
 import models, schemas
 
 def create_laptop(db: Session, laptop: schemas.LaptopCreate):
