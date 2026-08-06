@@ -4,7 +4,7 @@ from typing import List
 import crud
 import schemas
 import models
-
+import auth
 from database import Base, engine, SessionLocal
 
 Base.metadata.create_all(bind=engine)
